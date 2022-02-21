@@ -13,6 +13,6 @@ app.use((request, response, next) => {
 
 app.use(routes);
 
-app.listen(3005, () => {
-  console.log("App running at http://localhost:3005");
+app.listen(process.env.PORT, () => {
+  console.log(`App is running`);
 });
